@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let i = 2;
+    let count = 0;
+    let countNg = 0;
+    while(true){
+        if(count == 20){
+            break;
+        }
+        for(let j = 2; j <= Math.sqrt(i) ; j++){
+            if(i%j==0){
+                countNg++;
+            }
+
+        }
+        if(countNg == 0){
+            console.log(i);
+            count++;
+        } else {
+            countNg = 0;
+        }
+        i++;
+
+    }
+</script>
+</body>
+</html>
